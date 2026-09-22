@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "caseId": "DPI-HT-01",
   "student": {
-    "id": "",
-    "name": ""
+    "id": "ag25162@edu.lu.lv",
+    "name": "Gutčenko Aleksandra"
   },
   "evidence": [
     "01 USE THIS NUMBERS FINAL v9.xlsx, Management P&L, row 8",
@@ -563,7 +563,7 @@
       "confidence": "high",
       "aiProposal": "Recognize cash and a €90,000 contract liability; no August revenue.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The bank export confirms €90,000 was received, while the contracts evidence shows the related events are delivered in September. Delivery had not occurred by 31 August, so the receipt is more reliably supported as cash with a contract liability, not August revenue; profit and equity are unchanged while cash, assets and liabilities increase by €90,000.",
       "statementEffect": {
         "profit": 0,
         "cash": 90000,
@@ -586,7 +586,7 @@
       "confidence": "high",
       "aiProposal": "Recognize loan proceeds and a €50,000 liability; no income.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The signed borrowing evidence and matching €50,000 bank receipt establish a repayable obligation. Those external records are more reliable than any income description, so the amount is recognized as cash and a loan liability with no profit effect.",
       "statementEffect": {
         "profit": 0,
         "cash": 50000,
@@ -609,7 +609,7 @@
       "confidence": "medium",
       "aiProposal": "Capitalize €60,000 as PPE from 10 May and depreciate through 31 August within the €24,000 combined period estimate.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The supplier invoice and asset record identify a €60,000 packaging machine available for use from 10 May. The machine provides benefits beyond the current period, so capitalization as PPE is supported rather than immediate expensing; cash falls €60,000, PPE rises €60,000, and depreciation is included separately.",
       "statementEffect": {
         "profit": 0,
         "cash": -60000,
@@ -632,7 +632,7 @@
       "confidence": "medium",
       "aiProposal": "Capitalize €20,000 as PPE from 10 May and depreciate through 31 August within the €24,000 combined period estimate.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The supplier invoice and asset record identify the €20,000 photo booth as equipment available for continuing use from 10 May. Those records support capitalization as PPE rather than a one-period marketing expense; cash falls €20,000, PPE rises €20,000, and depreciation is recognized separately.",
       "statementEffect": {
         "profit": 0,
         "cash": -20000,
@@ -654,7 +654,7 @@
       "confidence": "high",
       "aiProposal": "Expense €10,000 as repair; it restores normal condition without extra capacity or useful life.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The purchase evidence describes belt replacement, cleaning and calibration that restore normal operation without increasing capacity or useful life. That specific work description supports repair expense rather than capitalization, reducing profit, cash, assets and equity by €10,000.",
       "statementEffect": {
         "profit": -10000,
         "cash": -10000,
@@ -677,7 +677,7 @@
       "confidence": "medium",
       "aiProposal": "Classify as owner distribution/personal receivable assessment item; proposed statements treat it as a distribution, not expense.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The loan and owner-spending evidence and the €70,000 bank transfer identify a villa deposit in the founder’s personal name, with no supported customer meeting. The bank record is more reliable than an unsupported business-purpose claim, so the payment is an owner distribution or recoverable personal amount, reducing cash and equity rather than profit.",
       "statementEffect": {
         "profit": 0,
         "cash": -70000,
@@ -701,7 +701,7 @@
       "confidence": "medium",
       "aiProposal": "Classify as owner distribution pending transaction-level support and recovery assessment.",
       "independentChallenge": "Independent review agrees on €40,000 distribution but notes the €110,000 founder bonus is inferred to duplicate the €70,000 villa plus €40,000 card spend; the file does not state this explicitly.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The bank export supports €40,000 of owner-card cash spending, but no transaction-level business support or approved compensation basis is provided. Pending that support, distribution treatment is more reliable than business expense; cash and equity fall €40,000, and the separate €110,000 founder-bonus line is not recorded again because it appears to duplicate the €70,000 villa and €40,000 card amounts.",
       "statementEffect": {
         "profit": 0,
         "cash": -40000,
@@ -716,14 +716,14 @@
       "category": "classification",
       "reviewTier": "material_judgment",
       "question": "Classify Physical product materials consumed.",
-      "answer": "Recognize €405,000 as physical-product COGS for valid delivered sales. This decreases profit, assets and equity.",
+      "answer": "Recognize €405,000 as physical-product COGS for valid delivered sales. This decreases profit, inventory and equity by €405,000.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf, p.2"
       ],
       "confidence": "medium",
-      "aiProposal": "Recognize €405,000 as physical-product COGS for valid delivered sales.",
+      "aiProposal": "Recognize €405,000 as physical-product COGS for valid delivered sales, consistent with the approved inventory roll-forward.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The warehouse notes directly identify €405,000 of materials consumed for valid delivered sales. This operational record is the strongest supplied evidence for usage and is consistent with the inventory roll-forward, so €405,000 is recognized as physical-product COGS, reducing profit, inventory and equity by €405,000.",
       "statementEffect": {
         "profit": -405000,
         "cash": 0,
@@ -745,7 +745,7 @@
       "confidence": "high",
       "aiProposal": "Classify €80,000 as direct cost of revenue for completed events.",
       "independentChallenge": "Independent review agrees on direct-cost classification but cautions that the €5,000 row-level unpaid difference may include opening arrears, so only total payroll accrual is reliable.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The payroll workbook identifies €80,000 for employees who delivered completed events. Their work is directly attributable to earned event revenue, so the cost is classified as direct cost of revenue; profit and equity fall €80,000, with €75,000 paid and €5,000 included in the payroll accrual subject to the documented opening-arrears limitation.",
       "statementEffect": {
         "profit": -80000,
         "cash": -75000,
@@ -833,7 +833,7 @@
       "confidence": "medium",
       "aiProposal": "Recognize €24,000 period depreciation; closing accumulated depreciation becomes €69,000.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The asset workbook supplies €45,000 opening accumulated depreciation and a €24,000 period estimate. In the absence of a complete fixed-asset calculation, those documented balances support a provisional €24,000 charge and €69,000 closing accumulated depreciation; profit, PPE and equity fall €24,000, while the detailed basis remains an uncertainty.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -856,7 +856,7 @@
       "confidence": "high",
       "aiProposal": "Write off/provide fully for €18,000; the later notice confirms an existing condition.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The customer evidence identifies the €18,000 receivable and the later liquidation notice confirms that the financial difficulty existed at 31 August and no recovery is expected. The external notice is stronger than management optimism, so a full write-off or allowance reduces receivables, profit and equity by €18,000.",
       "statementEffect": {
         "profit": -18000,
         "cash": 0,
@@ -879,7 +879,7 @@
       "confidence": "high",
       "aiProposal": "Write inventory down by €22,000 to nil and recognize a separate €2,000 disposal obligation/expense.",
       "independentChallenge": "Independent review agrees on the €22,000 stock write-off but challenges recognition of the €2,000 disposal provision because no binding disposal obligation at 31 August is evidenced.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The warehouse notes and independent assessment support that €22,000 of damaged stock has no recoverable sale value, so it is written down to zero. The later evidence also supplies a €2,000 disposal estimate, which the approved treatment recognizes as a separate expense and liability; profit and equity fall €24,000, assets fall €22,000 and liabilities rise €2,000.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -902,7 +902,7 @@
       "confidence": "high",
       "aiProposal": "Recognize a €25,000 provision and expense based on counsel’s probable/best-estimate assessment.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "External counsel assesses the former-employee claim as probable and gives €25,000 as the best estimate. That legal evidence is more reliable than management’s hope that no claim will proceed, so a €25,000 expense and provision are recognized, reducing profit and equity and increasing liabilities.",
       "statementEffect": {
         "profit": -25000,
         "cash": 0,
@@ -972,7 +972,7 @@
       "confidence": "high",
       "aiProposal": "Recognize €180,000 revenue; signed acceptance and matching bank receipt establish delivery and identity.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "The invoice has been paid, the acceptance certificate is available, and the bank statement is available.",
+      "studentReasoning": "The signed acceptance, CRM record and matching €180,000 bank receipt independently corroborate delivery and payment. Because performance was completed before period end, €180,000 is recognized as revenue, increasing cash, profit and equity.",
       "statementEffect": {
         "profit": 180000,
         "cash": 180000,
@@ -996,7 +996,7 @@
       "confidence": "high",
       "aiProposal": "Recognize €200,000 revenue on accepted delivery; record €142,000 cash and €58,000 receivable.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The signed acceptance and CRM record support completion of the €200,000 Freedom delivery, and the bank export confirms €142,000 collected. These records support full revenue recognition with the unpaid €58,000 as a receivable; profit and assets increase €200,000.",
       "statementEffect": {
         "profit": 200000,
         "cash": 142000,
@@ -1020,7 +1020,7 @@
       "confidence": "medium",
       "aiProposal": "Recognize €100,000 revenue on completed event and customer acceptance; record €70,000 cash and €30,000 receivable.",
       "independentChallenge": "Independent review regards the email acceptance as sufficiently corroborated by completion, CRM and the exact bank match; confidence could reasonably be high.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The completed-event record, CRM entry, customer acceptance email and exact €70,000 bank match corroborate the €100,000 Phoenix event more strongly than any concern about the form of acceptance. Revenue is therefore recognized, increasing profit by €100,000, cash by €70,000 and receivables by €30,000.",
       "statementEffect": {
         "profit": 100000,
         "cash": 70000,
@@ -1044,7 +1044,7 @@
       "confidence": "high",
       "aiProposal": "Recognize €120,000 revenue on delivery and acceptance; record €95,000 cash and €25,000 receivable.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The acceptance evidence and CRM record establish delivery of the €120,000 Liberty order, while the bank export confirms €95,000 collected. Full revenue is recognized with a €25,000 receivable, increasing profit and assets by €120,000.",
       "statementEffect": {
         "profit": 120000,
         "cash": 95000,
@@ -1067,7 +1067,7 @@
       "confidence": "high",
       "aiProposal": "Defer all €90,000 as contract liabilities until September delivery.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The contracts evidence shows the events were scheduled for September, although the bank export confirms €90,000 was received before 31 August. Because performance was not complete, the cash is a contract liability rather than revenue; cash, assets and liabilities rise €90,000 with no profit effect.",
       "statementEffect": {
         "profit": 0,
         "cash": 90000,
@@ -1114,7 +1114,7 @@
       "confidence": "high",
       "aiProposal": "Use €18,000 full allowance/write-off because no recovery is expected.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The customer record establishes the €18,000 balance and the external liquidation notice states that no recovery is expected from a condition existing at period end. That subsequent confirming evidence supports a full allowance or write-off, reducing receivables, profit and equity by €18,000.",
       "statementEffect": {
         "profit": -18000,
         "cash": 0,
@@ -1137,7 +1137,7 @@
       "confidence": "high",
       "aiProposal": "Recognize €24,000 total P&L effect: €22,000 inventory write-off plus €2,000 disposal provision.",
       "independentChallenge": "Independent review proposes €22,000 only and disclosure of the €2,000 quote unless a present disposal obligation is established.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The warehouse evidence supports a €22,000 write-down for stock with no recoverable value, and the later evidence provides a €2,000 disposal estimate. Under the approved treatment both amounts are recognized, producing a €24,000 profit and equity reduction, a €22,000 asset reduction and a €2,000 liability increase; the timing of the disposal obligation remains disclosed as a challenge.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -1160,7 +1160,7 @@
       "confidence": "high",
       "aiProposal": "Use counsel’s €25,000 best estimate.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "The company determines the size of the accumulation based on a legal opinion.",
+      "studentReasoning": "External counsel identifies a probable obligation and provides €25,000 as the best estimate within the stated range. The legal opinion is the strongest evidence for measurement, so a €25,000 expense and provision are recognized, reducing profit and equity and increasing liabilities.",
       "statementEffect": {
         "profit": -25000,
         "cash": 0,
@@ -1182,7 +1182,7 @@
       "confidence": "medium",
       "aiProposal": "Use the supplied independent €24,000 period estimate and disclose the missing detailed basis.",
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Can we confirm how the €24,000 in the handover certificate was calculated? There is no calculation or supporting evidence provided. The total is €80,000 over 10 months, or €8,000 per month, so €24,000 appears to represent three months. However, this does not meet the criteria for a fixed asset, as fixed assets should not be written off over only 10 months.",
+      "studentReasoning": "The asset workbook records a €24,000 period estimate but does not provide useful lives, methods or an asset-by-asset calculation. The statements retain the documented €24,000 provisionally, reducing profit, PPE and equity, while certification remains conditional on obtaining the fixed-asset register and recalculating the charge.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -1197,23 +1197,23 @@
       "category": "estimation",
       "reviewTier": "material_judgment",
       "question": "Estimate Closing inventory and document the basis.",
-      "answer": "Closing inventory in balance sheet should be based on the saleable physical count of €121,000, not the €112,000 roll-forward balance. The €9,000 difference should only be written off after independent documentation of the accident has been reviewed and verified by the relevant parties.",
+      "answer": "The selected inventory roll-forward produces €112,000 net closing inventory: €80,000 opening inventory + €459,000 purchases − €405,000 materials consumed − €22,000 damaged-stock write-down. The saleable physical count indicates €121,000, creating an unresolved €9,000 difference. The €121,000 amount is disclosed as an alternative but is not used in the approved financial statements.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf, pp.1-2",
         "06 Purchases Invoices and Goods Received.pdf, p.1"
       ],
       "confidence": "medium",
-      "aiProposal": "Use €112,000 provisionally: €80,000 opening + €459,000 purchases - €405,000 consumed - €22,000 write-off. Flag the €9,000 count difference for investigation.",
-      "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentReasoning": "Closing inventory should be €121,000 because the physical count confirms what saleable stock actually existed on 31 August, while the €112,000 roll-forward contains yet an unexplained €9,000 discrepancy.",
+      "aiProposal": "Use €112,000 net closing inventory from the documented inventory roll-forward and disclose the €121,000 physical count as an unresolved alternative.",
+      "independentChallenge": "Independent review agrees that €112,000 is the approved carrying amount and that the €121,000 physical count remains an unresolved disclosed alternative.",
+      "studentReasoning": "The purchases evidence supports €459,000 and the warehouse notes support €80,000 opening inventory, €405,000 materials consumed and a €22,000 damaged-stock write-down. This documented roll-forward is arithmetically traceable and therefore used for the approved €112,000 balance. The €121,000 saleable count is retained as an alternative because the supplied evidence does not reconcile its €9,000 excess through SKU-level and cutoff records; using €112,000 makes profit, assets and equity €9,000 lower than that alternative.",
       "statementEffect": {
-        "profit": -427000,
+        "profit": -9000,
         "cash": 0,
-        "assets": -427000,
+        "assets": -9000,
         "liabilities": 0,
-        "equity": -427000
+        "equity": -9000
       },
-      "changedFromAI": true
+      "changedFromAI": false
     },
     {
       "id": "D076",
@@ -1336,7 +1336,7 @@
       "category": "estimation",
       "reviewTier": "operational",
       "question": "Estimate Physical COGS and document the basis.",
-      "answer": "Estimate physical-product COGS at €405,000 based on valid delivered sales records; retain the €9,000 inventory conflict as unresolved.",
+      "answer": "Estimate physical-product COGS at €405,000 and net closing inventory at €112,000 from the documented roll-forward; disclose the €121,000 count as an unresolved alternative.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf, p.2"
       ],
@@ -1406,7 +1406,7 @@
       "confidence": "high",
       "aiProposal": "Yes. Approve corrected accounts, resolve/quantify remaining uncertainties, then value the business.",
       "independentChallenge": "Independent review recommends conditional approval until the €9,000 inventory gap and unsupported insurance line are addressed.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "The corrected statements are supported by the bank, contract, CRM, warehouse, supplier, payroll and legal evidence, while management’s accounts contain unsupported classifications. Approval should therefore be conditional on the disclosed inventory, insurance, depreciation and opening-balance uncertainties being resolved or accepted before valuation; the decision itself has no immediate statement effect.",
       "statementEffect": {
         "profit": 0,
         "cash": 0,
@@ -1521,7 +1521,7 @@
       "confidence": "high",
       "aiProposal": "No. Do not use €312,000; use board-approved corrected profit after resolving specified uncertainties and defining earn-out accounting policies.",
       "independentChallenge": "Independent review calculates €65,000 provisional profit before any €2,000 disposal provision, versus this proposal’s €63,000 after recognizing that provision.",
-      "studentReasoning": "Reasoning and certification included in student final answer.",
+      "studentReasoning": "Management’s €312,000 profit is contradicted by the reconstructed revenue, COGS, operating costs, provisions and interest evidence. The reconciled approved treatments produce €63,000 profit, so the unsupported management figure should not determine the earn-out; using the corrected figure reduces the claimed profit basis by €249,000.",
       "statementEffect": {
         "profit": -249000,
         "cash": 0,
@@ -1639,29 +1639,34 @@
           "Purchases p.1"
         ],
         [
-          "Materials consumed",
+          "Materials consumed / COGS",
           -405000,
           "Warehouse p.2"
         ],
         [
-          "Damaged-stock write-off",
+          "Closing inventory before impairment",
+          134000,
+          "Calculated roll-forward"
+        ],
+        [
+          "Damaged-stock write-down",
           -22000,
           "Warehouse pp.1-2"
         ],
         [
-          "Proposed closing inventory",
+          "Approved net closing inventory",
           112000,
           "Calculated roll-forward"
         ],
         [
-          "Saleable physical count",
+          "Alternative saleable physical count",
           121000,
           "Warehouse p.1: €79k + €42k"
         ],
         [
-          "Unresolved difference",
-          -9000,
-          null
+          "Unresolved alternative difference",
+          9000,
+          "Not used in approved statements"
         ]
       ]
     },
@@ -2264,7 +2269,7 @@
         "note": null
       },
       {
-        "label": "Basis note: Closing inventory uses the €112,000 roll-forward and does not conceal the €9,000 conflict with the physical count. Opening AR (€35,000), opening supplier payable (€45,000), and opening equity (€170,000) are inferred/derived and shown separately on the Opening Balances sheet.",
+        "label": "Basis note: The selected inventory roll-forward produces €112,000 net closing inventory: €80,000 opening inventory + €459,000 purchases − €405,000 materials consumed − €22,000 damaged-stock write-down. The saleable physical count indicates €121,000, creating an unresolved €9,000 difference. The €121,000 amount is disclosed as an alternative but is not used in the approved financial statements. Opening AR (€35,000), opening supplier payable (€45,000), and opening equity (€170,000) are inferred/derived and shown separately on the Opening Balances page.",
         "value": null,
         "formula": null,
         "note": null
@@ -2350,15 +2355,15 @@
       "Reference": 112000,
       "Difference": 0,
       "Status": "Agrees",
-      "Comment": "Proposed carrying amount."
+      "Comment": "Approved net carrying amount from the documented roll-forward."
     },
     {
       "Reconciliation": "Inventory roll-forward vs saleable count",
       "Calculated": 112000,
       "Reference": 121000,
       "Difference": -9000,
-      "Status": "Unresolved",
-      "Comment": "Unresolved source conflict; no plug."
+      "Status": "Unresolved alternative",
+      "Comment": "€121,000 is disclosed but not used in the approved statements."
     },
     {
       "Reconciliation": "Balance sheet",
@@ -2366,16 +2371,16 @@
       "Reference": 531000,
       "Difference": 0,
       "Status": "Agrees",
-      "Comment": "Balances using separately disclosed inferred opening balances/equity."
+      "Comment": "Assets equal liabilities plus closing equity using €112,000 approved inventory."
     }
   ],
   "uncertainties": [
     {
       "ID": "U01",
       "Area": "Inventory",
-      "Question / conflict": "Saleable physical count €121,000 exceeds roll-forward €112,000 by €9,000.",
+      "Question / conflict": "Approved roll-forward inventory is €112,000; the alternative saleable physical count is €121,000, a €9,000 unresolved difference.",
       "Evidence needed": "Obtain SKU-level count sheets, purchase receipts, issue records and cutoff testing.",
-      "Potential effect": "Could increase assets/profit/equity by up to €9,000 if count prevails."
+      "Potential effect": "The €121,000 alternative would increase profit, assets and equity by €9,000 but is not used in the approved statements."
     },
     {
       "ID": "U02",
@@ -2467,10 +2472,25 @@
     "decisionCount": 100,
     "materialJudgmentCount": 25,
     "operationalDecisionCount": 75,
-    "studentIdentityPending": true,
-    "workbookConsistencyWarnings": [
-      "D075 student final answer selects €121,000 inventory while the Balance Sheet retains €112,000.",
-      "D074 requests depreciation recalculation while the statements retain €24,000."
+    "studentIdentityPending": false,
+    "studentCertificationComplete": true,
+    "materialDecisionSpecificReasoningCount": 25,
+    "approvedInventory": 112000,
+    "alternativePhysicalCount": 121000,
+    "inventoryAlternativeDifference": 9000,
+    "netProfit": 63000,
+    "totalAssets": 531000,
+    "closingEquity": 123000,
+    "balanceSheetDifference": 0,
+    "equityRollForwardDifference": 0,
+    "remainingUncertainties": [
+      "The €121,000 saleable physical count remains an unresolved alternative to the approved €112,000 roll-forward.",
+      "The €24,000 depreciation charge remains provisional pending the detailed fixed-asset calculation."
     ]
+  },
+  "certification": {
+    "status": "personally reviewed and certified",
+    "date": "2026-09-23",
+    "statement": "I personally reviewed all 100 decisions, the supporting evidence, the financial statement effects and the unresolved uncertainties. I certify that the submitted answers represent my final work."
   }
 }
