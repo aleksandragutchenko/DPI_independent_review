@@ -1,0 +1,13 @@
+dist/
+node_modules/
+.vercel/
+.env
+.env.*
+!.env.example
+*.log
+*.xlsx
+*.xls
+*.csv
+*.tmp
+.DS_Store
+Thumbs.db
