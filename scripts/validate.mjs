@@ -35,8 +35,16 @@ assert(!site.decisions.some(item => item.tier === 'operational' && (item.student
 assert(site.decisions.find(item => item.id === 'D048').studentFinalAnswer.includes('€405,000'), 'D048 does not use €405,000 materials consumed.');
 assert(site.decisions.find(item => item.id === 'D075').studentFinalAnswer.includes('€112,000 net closing inventory'), 'D075 does not select €112,000 inventory.');
 assert(site.decisions.find(item => item.id === 'D075').studentFinalAnswer.includes('€121,000 amount is disclosed as an alternative'), 'D075 does not disclose the €121,000 alternative.');
-assert(site.summary.netProfit === 63000 && site.summary.totalAssets === 531000 && site.summary.closingEquity === 123000, 'Summary figures do not match the approved treatment.');
+assert(site.summary.netProfit === 65000 && site.summary.totalAssets === 531000 && site.summary.closingEquity === 125000, 'Summary figures do not match the approved treatment.');
 assert(site.validation.balanceSheetDifference === 0 && site.validation.equityRollForwardDifference === 0, 'Financial statements do not reconcile.');
+assert(site.validation.cashReconciliationDifference === 0 && site.validation.cashFlowClosingCash === 60000, 'Cash Flow does not reconcile to closing bank cash.');
+assert(site.validation.payrollClosingPayable === 32000 && site.validation.payrollReconciliationDifference === 0, 'Payroll payable does not reconcile to €32,000.');
+assert(site.validation.disposalProvisionRecognized === 0 && site.validation.disposalQuoteDisclosed === 2000, 'Disposal quote treatment is inconsistent.');
+assert(site.validation.materialEffectEquationFailures.length === 0, 'A material decision effect fails the accounting equation.');
+assert(site.decisions.find(item => item.id === 'D043').effects.assets === 0 && site.decisions.find(item => item.id === 'D043').effects.ppe === 60000, 'D043 purchase effects are incorrect.');
+assert(site.decisions.find(item => item.id === 'D044').effects.assets === 0 && site.decisions.find(item => item.id === 'D044').effects.ppe === 20000, 'D044 purchase effects are incorrect.');
+assert(site.decisions.find(item => item.id === 'D049').effects.assets === -75000 && site.decisions.find(item => item.id === 'D049').effects.liabilities === 5000, 'D049 payroll effects are incorrect.');
+assert(['D058','D072'].every(id => site.decisions.find(item => item.id === id).effects.profit === -22000 && site.decisions.find(item => item.id === id).effects.liabilities === 0), 'Damaged-stock decisions do not use the no-provision treatment.');
 assert(submission.student.name === 'Gutčenko Aleksandra' && submission.student.id === 'ag25162@edu.lu.lv', 'Student identification is incomplete.');
 assert(submission.certification?.status === 'personally reviewed and certified' && submission.certification?.date === '2026-09-23' && submission.certification?.statement, 'Student certification is incomplete.');
 for (const route of routes) await access(path.join(base, route, 'index.html'));
@@ -53,10 +61,15 @@ console.log(JSON.stringify({
   jsonValid: true
   ,approvedInventory: 112000
   ,alternativePhysicalCount: 121000
-  ,netProfit: 63000
+  ,netProfit: 65000
   ,totalAssets: 531000
-  ,closingEquity: 123000
+  ,totalLiabilities: 406000
+  ,closingEquity: 125000
   ,balanceSheetDifference: 0
   ,equityRollForwardDifference: 0
+  ,closingCash: 60000
+  ,payrollClosingPayable: 32000
+  ,disposalProvisionRecognized: 0
+  ,materialEffectEquationFailures: 0
   ,studentCertificationComplete: true
 }, null, 2));

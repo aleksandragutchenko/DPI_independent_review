@@ -33,11 +33,11 @@
     "decisionIds": "D001-D100",
     "operational": 75,
     "material": 25,
-    "netProfit": 63000,
+    "netProfit": 65000,
     "closingCash": 60000,
     "totalAssets": 531000,
-    "closingEquity": 123000,
-    "unresolvedCount": 7,
+    "closingEquity": 125000,
+    "unresolvedCount": 8,
     "status": [
       {
         "item": "Template completeness",
@@ -1049,7 +1049,7 @@
       "tier": "operational",
       "category": "evidence_matching",
       "question": "Resolve the source and treatment of Water-damaged stock.",
-      "proposedAnswer": "Write off €22,000 damaged stock and recognize the separately supported €2,000 disposal obligation/expense.",
+      "proposedAnswer": "Write off €22,000 of damaged stock. Disclose the €2,000 disposal quote as a possible future cost, but do not recognize a provision without evidence of a present obligation at 31 August.",
       "evidence": "05 Warehouse Count Marta Notes.pdf, pp.1-2\n11 Evidence Received After Takeover.pdf, p.1",
       "evidenceItems": [
         "05 Warehouse Count Marta Notes.pdf, pp.1-2",
@@ -1279,7 +1279,7 @@
       "tier": "material_judgment",
       "category": "classification",
       "question": "Classify Packaging machine.",
-      "proposedAnswer": "Capitalize €60,000 as PPE from 10 May and depreciate through 31 August within the €24,000 combined period estimate.",
+      "proposedAnswer": "Capitalize the €60,000 packaging machine as PPE: cash −€60,000, PPE +€60,000 and net total-assets effect €0 at purchase. Recognize depreciation separately.",
       "evidence": "06 Purchases Invoices and Goods Received.pdf, p.2\n08 Assets Repairs Leases Maybe.xlsx, Assets, row 5",
       "evidenceItems": [
         "06 Purchases Invoices and Goods Received.pdf, p.2",
@@ -1291,24 +1291,26 @@
       "effects": {
         "profit": 0,
         "cash": -60000,
-        "assets": 60000,
+        "ppe": 60000,
+        "assets": 0,
         "liabilities": 0,
         "equity": 0
       },
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentFinalAnswer": "Record the €60,000 as property, plant, and equipment from 10 May, and include depreciation up to 31 August in the total €24,000 depreciation estimate. This decreases cash and increases asstes by €60,000.",
-      "studentReasoning": "The supplier invoice and asset record identify a €60,000 packaging machine available for use from 10 May. The machine provides benefits beyond the current period, so capitalization as PPE is supported rather than immediate expensing; cash falls €60,000, PPE rises €60,000, and depreciation is included separately.",
+      "studentFinalAnswer": "Record the €60,000 packaging machine as PPE. At purchase, cash decreases €60,000 and PPE increases €60,000, so the net effect on total assets is €0; profit, liabilities and equity are unchanged. Depreciation is a separate subsequent effect included in D056 and the PPE schedule.",
+      "studentReasoning": "The supplier invoice and asset record identify a €60,000 packaging machine available for continuing use from 10 May. Those records support exchanging one asset, cash, for another asset, PPE, rather than recognizing an expense: cash falls €60,000, PPE rises €60,000 and total assets do not change at purchase. The separate €24,000 period depreciation estimate is addressed in D056 and the PPE schedule.",
       "reasoningEmbedded": false,
       "studentOverride": false,
       "disagreement": false,
-      "unresolved": true
+      "unresolved": true,
+      "effectsNote": "Purchase-date effect: cash −€60,000 and PPE +€60,000; net total assets €0. Depreciation is separate."
     },
     {
       "id": "D044",
       "tier": "material_judgment",
       "category": "classification",
       "question": "Classify Photo booth.",
-      "proposedAnswer": "Capitalize €20,000 as PPE from 10 May and depreciate through 31 August within the €24,000 combined period estimate.",
+      "proposedAnswer": "Capitalize the €20,000 photo booth as PPE: cash −€20,000, PPE +€20,000 and net total-assets effect €0 at purchase. Recognize depreciation separately.",
       "evidence": "06 Purchases Invoices and Goods Received.pdf, p.2\n08 Assets Repairs Leases Maybe.xlsx, Assets, row 6",
       "evidenceItems": [
         "06 Purchases Invoices and Goods Received.pdf, p.2",
@@ -1320,17 +1322,19 @@
       "effects": {
         "profit": 0,
         "cash": -20000,
-        "assets": 20000,
+        "ppe": 20000,
+        "assets": 0,
         "liabilities": 0,
         "equity": 0
       },
       "independentChallenge": "Independent review agrees with the proposed treatment and amount.",
-      "studentFinalAnswer": "Record the €20,000 as property, plant, and equipment from 10 May, and include depreciation up to 31 August in the total €24,000 depreciation estimate. This decreases cash and increases asstes by €20,000.",
-      "studentReasoning": "The supplier invoice and asset record identify the €20,000 photo booth as equipment available for continuing use from 10 May. Those records support capitalization as PPE rather than a one-period marketing expense; cash falls €20,000, PPE rises €20,000, and depreciation is recognized separately.",
+      "studentFinalAnswer": "Record the €20,000 photo booth as PPE. At purchase, cash decreases €20,000 and PPE increases €20,000, so the net effect on total assets is €0; profit, liabilities and equity are unchanged. Depreciation is a separate subsequent effect included in D056 and the PPE schedule.",
+      "studentReasoning": "The supplier invoice and asset record identify the €20,000 photo booth as equipment available for continuing use from 10 May. Those records support exchanging cash for PPE rather than a one-period expense: cash falls €20,000, PPE rises €20,000 and total assets do not change at purchase. Depreciation is recognized separately through D056 and the PPE schedule.",
       "reasoningEmbedded": false,
       "studentOverride": false,
       "disagreement": false,
-      "unresolved": true
+      "unresolved": true,
+      "effectsNote": "Purchase-date effect: cash −€20,000 and PPE +€20,000; net total assets €0. Depreciation is separate."
     },
     {
       "id": "D045",
@@ -1452,7 +1456,7 @@
       "tier": "material_judgment",
       "category": "classification",
       "question": "Classify Event staff payroll.",
-      "proposedAnswer": "Classify €80,000 as direct cost of revenue for completed events.",
+      "proposedAnswer": "Classify €80,000 as direct cost of revenue; show €75,000 cash paid and a €5,000 implied departmental accrual, subject to the opening-payroll limitation and without adding it to the €32,000 company closing payable.",
       "evidence": "07 Payroll Bonuses Contractors NEW.xlsx, Payroll, row 4",
       "evidenceItems": [
         "07 Payroll Bonuses Contractors NEW.xlsx, Payroll, row 4"
@@ -1463,17 +1467,18 @@
       "effects": {
         "profit": -80000,
         "cash": -75000,
-        "assets": -5000,
+        "assets": -75000,
         "liabilities": 5000,
         "equity": -80000
       },
-      "independentChallenge": "Independent review agrees on direct-cost classification but cautions that the €5,000 row-level unpaid difference may include opening arrears, so only total payroll accrual is reliable.",
-      "studentFinalAnswer": "Classify €80,000 as direct cost of revenue for completed events.",
-      "studentReasoning": "The payroll workbook identifies €80,000 for employees who delivered completed events. Their work is directly attributable to earned event revenue, so the cost is classified as direct cost of revenue; profit and equity fall €80,000, with €75,000 paid and €5,000 included in the payroll accrual subject to the documented opening-arrears limitation.",
+      "independentChallenge": "The €80,000 direct-cost classification and €75,000 payment are supported. The €5,000 difference is an implied departmental accrual, but only the total-company €32,000 closing payroll payable is authoritative because €15,000 of opening unpaid payroll is not allocated by department.",
+      "studentFinalAnswer": "Classify €80,000 of event delivery staff payroll as a direct cost of revenue. Of that expense, €75,000 was paid in cash. The €5,000 expense-minus-cash difference is an implied departmental accrual, not a separately confirmed closing liability; the authoritative company-wide closing payroll payable is €32,000.",
+      "studentReasoning": "The payroll workbook directly identifies €80,000 of event delivery payroll expense and €75,000 paid for that department, supporting direct-cost classification and a €5,000 expense-minus-cash difference. However, the same evidence includes €15,000 of opening unpaid payroll, so the €5,000 is only an implied departmental accrual and is not independently proven as a separate closing balance. The company-level roll-forward—€15,000 opening unpaid + €248,000 total expense − €231,000 total paid—controls the €32,000 closing payroll payable.",
       "reasoningEmbedded": false,
       "studentOverride": false,
       "disagreement": true,
-      "unresolved": false
+      "unresolved": false,
+      "effectsNote": "The €5,000 liability effect is the implied departmental accrual only. It is included within, not added to, the €32,000 company-wide closing payroll payable."
     },
     {
       "id": "D050",
@@ -1705,7 +1710,7 @@
       "tier": "material_judgment",
       "category": "classification",
       "question": "Classify Damaged stock.",
-      "proposedAnswer": "Write inventory down by €22,000 to nil and recognize a separate €2,000 disposal obligation/expense.",
+      "proposedAnswer": "Recognize the €22,000 damaged-inventory write-down. Do not recognize a separate €2,000 disposal provision or expense because the supplied quote estimates removal cost but does not demonstrate a present legal or constructive obligation at 31 August. Disclose the €2,000 quote as a possible future cost; recognize a provision only if evidence shows disposal was ordered, contracted, legally required or otherwise unavoidable at the reporting date.",
       "evidence": "05 Warehouse Count Marta Notes.pdf, pp.1-2\n11 Evidence Received After Takeover.pdf, p.1",
       "evidenceItems": [
         "05 Warehouse Count Marta Notes.pdf, pp.1-2",
@@ -1713,21 +1718,22 @@
       ],
       "confidence": "high",
       "accountingAmbiguity": "Whether wet basement stock retains carrying value and whether disposal cost is included.",
-      "proposedTreatment": "Write inventory down by €22,000 to nil and recognize a separate €2,000 disposal obligation/expense.",
+      "proposedTreatment": "Write inventory down by €22,000 to nil. Do not recognize the €2,000 disposal quote as an expense or liability unless a present obligation at 31 August is demonstrated.",
       "effects": {
-        "profit": -24000,
+        "profit": -22000,
         "cash": 0,
         "assets": -22000,
-        "liabilities": 2000,
-        "equity": -24000
+        "liabilities": 0,
+        "equity": -22000
       },
-      "independentChallenge": "Independent review agrees on the €22,000 stock write-off but challenges recognition of the €2,000 disposal provision because no binding disposal obligation at 31 August is evidenced.",
-      "studentFinalAnswer": "Write the inventory down by €22,000 to zero, as an independent assessment confirmed it can no longer be sold. Also record a separate €2,000 disposal expense (a liability), This decreases profit by €24,000, assets by €22,000 and equity by €24,000.",
-      "studentReasoning": "The warehouse notes and independent assessment support that €22,000 of damaged stock has no recoverable sale value, so it is written down to zero. The later evidence also supplies a €2,000 disposal estimate, which the approved treatment recognizes as a separate expense and liability; profit and equity fall €24,000, assets fall €22,000 and liabilities rise €2,000.",
+      "independentChallenge": "Independent review agrees: the €2,000 quote does not establish a present obligation at 31 August, so no disposal provision or expense is recognized.",
+      "studentFinalAnswer": "Recognize the €22,000 damaged-inventory write-down. Do not recognize a separate €2,000 disposal provision or expense because the supplied quote estimates removal cost but does not demonstrate a present legal or constructive obligation at 31 August. Disclose the €2,000 quote as a possible future cost; recognize a provision only if evidence shows disposal was ordered, contracted, legally required or otherwise unavoidable at the reporting date.",
+      "studentReasoning": "The warehouse evidence and independent assessment support that €22,000 of damaged stock has no recoverable sale value, so the inventory write-down is recognized. The later €2,000 document is only a disposal quote; no supplied evidence shows that disposal was ordered, contracted, legally required or otherwise unavoidable at 31 August. A quote measures a possible cost but does not by itself establish a present obligation, so no separate expense or liability is recognized. Compared with the former treatment, profit and equity increase €2,000, liabilities decrease €2,000 and cash is unchanged.",
       "reasoningEmbedded": false,
       "studentOverride": false,
-      "disagreement": true,
-      "unresolved": true
+      "disagreement": false,
+      "unresolved": true,
+      "effectsNote": "Approved treatment recognizes only the €22,000 inventory write-down. The €2,000 disposal quote is disclosed but not recognized."
     },
     {
       "id": "D059",
@@ -2113,7 +2119,7 @@
       "tier": "material_judgment",
       "category": "estimation",
       "question": "Estimate Damaged inventory write-off and document the basis.",
-      "proposedAnswer": "Recognize €24,000 total P&L effect: €22,000 inventory write-off plus €2,000 disposal provision.",
+      "proposedAnswer": "Recognize the €22,000 damaged-inventory write-down. Do not recognize a separate €2,000 disposal provision or expense because the supplied quote estimates removal cost but does not demonstrate a present legal or constructive obligation at 31 August. Disclose the €2,000 quote as a possible future cost; recognize a provision only if evidence shows disposal was ordered, contracted, legally required or otherwise unavoidable at the reporting date.",
       "evidence": "05 Warehouse Count Marta Notes.pdf, pp.1-2\n11 Evidence Received After Takeover.pdf, p.1",
       "evidenceItems": [
         "05 Warehouse Count Marta Notes.pdf, pp.1-2",
@@ -2121,21 +2127,22 @@
       ],
       "confidence": "high",
       "accountingAmbiguity": "Whether damaged-stock adjustment is €22,000 or includes disposal cost.",
-      "proposedTreatment": "Recognize €24,000 total P&L effect: €22,000 inventory write-off plus €2,000 disposal provision.",
+      "proposedTreatment": "Recognize a €22,000 damaged-stock write-down. Disclose the €2,000 quote as a possible future cost; recognize no provision without evidence of a present obligation at 31 August.",
       "effects": {
-        "profit": -24000,
+        "profit": -22000,
         "cash": 0,
         "assets": -22000,
-        "liabilities": 2000,
-        "equity": -24000
+        "liabilities": 0,
+        "equity": -22000
       },
-      "independentChallenge": "Independent review proposes €22,000 only and disclosure of the €2,000 quote unless a present disposal obligation is established.",
-      "studentFinalAnswer": "Record a total €24,000 impact on profit and loss: €22,000 for the inventory write-off and €2,000 for disposal costs.",
-      "studentReasoning": "The warehouse evidence supports a €22,000 write-down for stock with no recoverable value, and the later evidence provides a €2,000 disposal estimate. Under the approved treatment both amounts are recognized, producing a €24,000 profit and equity reduction, a €22,000 asset reduction and a €2,000 liability increase; the timing of the disposal obligation remains disclosed as a challenge.",
+      "independentChallenge": "Independent review agrees: the €2,000 quote does not establish a present obligation at 31 August, so no disposal provision or expense is recognized.",
+      "studentFinalAnswer": "Recognize the €22,000 damaged-inventory write-down. Do not recognize a separate €2,000 disposal provision or expense because the supplied quote estimates removal cost but does not demonstrate a present legal or constructive obligation at 31 August. Disclose the €2,000 quote as a possible future cost; recognize a provision only if evidence shows disposal was ordered, contracted, legally required or otherwise unavoidable at the reporting date.",
+      "studentReasoning": "The warehouse evidence and independent assessment support that €22,000 of damaged stock has no recoverable sale value, so the inventory write-down is recognized. The later €2,000 document is only a disposal quote; no supplied evidence shows that disposal was ordered, contracted, legally required or otherwise unavoidable at 31 August. A quote measures a possible cost but does not by itself establish a present obligation, so no separate expense or liability is recognized. Compared with the former treatment, profit and equity increase €2,000, liabilities decrease €2,000 and cash is unchanged.",
       "reasoningEmbedded": false,
       "studentOverride": false,
-      "disagreement": true,
-      "unresolved": true
+      "disagreement": false,
+      "unresolved": true,
+      "effectsNote": "Approved treatment recognizes only the €22,000 inventory write-down. The €2,000 disposal quote is disclosed but not recognized."
     },
     {
       "id": "D073",
@@ -2599,7 +2606,7 @@
       "tier": "operational",
       "category": "estimation",
       "question": "Estimate Net profit and document the basis.",
-      "proposedAnswer": "Estimate net profit at €63,000 before any unsupported insurance adjustment: revenue €960,000 less COGS/direct payroll €485,000, operating expenses €400,000, and interest €12,000.",
+      "proposedAnswer": "Estimate net profit at €65,000 before any unsupported insurance adjustment: revenue €960,000 less COGS/direct payroll €485,000, operating expenses €398,000, and interest €12,000.",
       "evidence": "03 CRM Export Cleaned FINAL.xlsx, CRM Export, rows 4-9\n05 Warehouse Count Marta Notes.pdf, p.2\n07 Payroll Bonuses Contractors NEW.xlsx, Payroll, rows 4-6\n08 Assets Repairs Leases Maybe.xlsx, Assets, row 8\n09 Loans Owner Card and Legal Problems.pdf, pp.1-2\n11 Evidence Received After Takeover.pdf, p.1",
       "evidenceItems": [
         "03 CRM Export Cleaned FINAL.xlsx, CRM Export, rows 4-9",
@@ -2804,7 +2811,7 @@
       "tier": "operational",
       "category": "board_decision",
       "question": "Dispose of damaged stock",
-      "proposedAnswer": "Approve: dispose of damaged stock; recognize €22,000 write-off and €2,000 disposal obligation.",
+      "proposedAnswer": "Approve disposal planning for the damaged stock and the €22,000 write-down. Disclose the €2,000 quote as a possible future cash cost; do not recognize a provision until a present obligation is evidenced.",
       "evidence": "05 Warehouse Count Marta Notes.pdf, pp.1-2",
       "evidenceItems": [
         "05 Warehouse Count Marta Notes.pdf, pp.1-2"
@@ -2928,15 +2935,15 @@
       "accountingAmbiguity": "Whether management’s claimed €312,000 profit is suitable for an earn-out.",
       "proposedTreatment": "No. Do not use €312,000; use board-approved corrected profit after resolving specified uncertainties and defining earn-out accounting policies.",
       "effects": {
-        "profit": -249000,
+        "profit": -247000,
         "cash": 0,
         "assets": null,
         "liabilities": null,
-        "equity": -249000
+        "equity": -247000
       },
-      "independentChallenge": "Independent review calculates €65,000 provisional profit before any €2,000 disposal provision, versus this proposal’s €63,000 after recognizing that provision.",
+      "independentChallenge": "Independent review calculates €65,000 profit after recognizing the €22,000 damaged-stock write-down and not recognizing the unsupported €2,000 disposal provision.",
       "studentFinalAnswer": "No, do not use management’s claimed profit of €312,000. Use the corrected profit approved by the board, after resolving the outstanding uncertainties and agreeing on the accounting treatment for the earn-out.",
-      "studentReasoning": "Management’s €312,000 profit is contradicted by the reconstructed revenue, COGS, operating costs, provisions and interest evidence. The reconciled approved treatments produce €63,000 profit, so the unsupported management figure should not determine the earn-out; using the corrected figure reduces the claimed profit basis by €249,000.",
+      "studentReasoning": "Management’s €312,000 profit is contradicted by the reconstructed revenue, COGS, operating costs, provisions and interest evidence. The reconciled approved treatments produce €65,000 profit, so the unsupported management figure should not determine the earn-out; using the corrected figure reduces the claimed profit basis by €247,000.",
       "reasoningEmbedded": false,
       "studentOverride": false,
       "disagreement": true,
@@ -3030,10 +3037,10 @@
         "note": null
       },
       {
-        "label": "Disposal provision expense",
-        "value": -2000,
-        "formula": "=-Schedules!B74",
-        "note": null
+        "label": "Disposal provision expense (not recognized)",
+        "value": 0,
+        "formula": "=0",
+        "note": "€2,000 quote disclosed as a possible future cost; no present obligation evidenced at 31 August."
       },
       {
         "label": "Legal provision expense",
@@ -3043,7 +3050,7 @@
       },
       {
         "label": "Operating profit",
-        "value": 75000,
+        "value": 77000,
         "formula": "=SUM(B9:B21)",
         "note": null
       },
@@ -3055,12 +3062,12 @@
       },
       {
         "label": "Net profit",
-        "value": 63000,
+        "value": 65000,
         "formula": "=SUM(B22:B23)",
         "note": null
       },
       {
-        "label": "Note: Proposed profit includes a €2,000 disposal provision. The independent challenge is €65,000 if the post-takeover disposal quote does not establish a present obligation at 31 August. Insurance is €0 because no supporting amount or policy was supplied.",
+        "label": "Note: The €2,000 disposal quote is disclosed as a possible future cost but is not recognized because no present obligation at 31 August is evidenced. A provision would be recognized only if disposal was ordered, contracted, legally required or otherwise unavoidable. Insurance remains €0 because no supporting amount or policy was supplied.",
         "value": null,
         "formula": null,
         "note": null
@@ -3256,14 +3263,14 @@
         "note": null
       },
       {
-        "label": "Disposal provision",
-        "value": 2000,
+        "label": "Disposal provision (not recognized)",
+        "value": 0,
         "formula": null,
-        "note": null
+        "note": "€2,000 quote disclosed only; no present obligation evidenced."
       },
       {
         "label": "Total liabilities",
-        "value": 408000,
+        "value": 406000,
         "formula": null,
         "note": null
       },
@@ -3275,7 +3282,7 @@
       },
       {
         "label": "Net profit",
-        "value": 63000,
+        "value": 65000,
         "formula": null,
         "note": null
       },
@@ -3287,7 +3294,7 @@
       },
       {
         "label": "Closing equity",
-        "value": 123000,
+        "value": 125000,
         "formula": null,
         "note": null
       },
@@ -3298,7 +3305,7 @@
         "note": null
       },
       {
-        "label": "Basis note: The selected inventory roll-forward produces €112,000 net closing inventory: €80,000 opening inventory + €459,000 purchases − €405,000 materials consumed − €22,000 damaged-stock write-down. The saleable physical count indicates €121,000, creating an unresolved €9,000 difference. The €121,000 amount is disclosed as an alternative but is not used in the approved financial statements. Opening AR (€35,000), opening supplier payable (€45,000), and opening equity (€170,000) are inferred/derived and shown separately on the Opening Balances page.",
+        "label": "Basis note: The selected inventory roll-forward produces €112,000 net closing inventory: €80,000 opening inventory + €459,000 purchases − €405,000 materials consumed − €22,000 damaged-stock write-down. The saleable physical count indicates €121,000, creating an unresolved €9,000 difference. The €121,000 amount is disclosed as an alternative but is not used in the approved financial statements. The €2,000 disposal quote is disclosed but no liability is recognized because no present obligation at 31 August is evidenced. Opening AR (€35,000), opening supplier payable (€45,000), and opening equity (€170,000) are inferred/derived and shown separately on the Opening Balances page.",
         "value": null,
         "formula": null,
         "note": null
@@ -3486,7 +3493,7 @@
         "Payroll",
         "Expense",
         "Cash paid",
-        "Closing accrual contribution"
+        "Implied expense-less-cash difference"
       ],
       "rows": [
         [
@@ -3508,7 +3515,7 @@
           8000
         ],
         [
-          "Totals",
+          "Current-period totals",
           248000,
           231000,
           17000
@@ -3520,13 +3527,13 @@
           null
         ],
         [
-          "Closing accrued payroll",
+          "Closing payroll payable",
           32000,
           null,
           null
         ],
         [
-          "Check",
+          "Roll-forward check: €15,000 + €248,000 − €231,000 − €32,000",
           0,
           null,
           null
@@ -3681,7 +3688,11 @@
           18000
         ],
         [
-          "Disposal provision",
+          "Disposal provision recognized",
+          0
+        ],
+        [
+          "Disposal quote (memorandum only; not recognized)",
           2000
         ],
         [
@@ -3713,7 +3724,7 @@
           60000,
           0,
           "Agrees",
-          "Bank-confirmed; full bank roll-forward."
+          "Cash-flow closing cash agrees to the bank-confirmed €60,000 balance."
         ],
         [
           "Gross receivables",
@@ -3753,7 +3764,7 @@
           32000,
           0,
           "Agrees",
-          "Opening unpaid payroll explicitly disclosed."
+          "€15,000 opening unpaid + €248,000 expense − €231,000 paid = €32,000 closing payable; departmental differences are not added again."
         ],
         [
           "Loan",
@@ -3796,12 +3807,20 @@
           "€121,000 is disclosed but not used in the approved statements."
         ],
         [
+          "Disposal provision",
+          0,
+          0,
+          0,
+          "Not recognized",
+          "€2,000 quote disclosed as a possible future cost; no present obligation at 31 August is evidenced."
+        ],
+        [
           "Balance sheet",
           531000,
           531000,
           0,
           "Agrees",
-          "Assets equal liabilities plus closing equity using €112,000 approved inventory."
+          "Assets equal liabilities plus closing equity; no €2,000 disposal liability is recognized."
         ]
       ]
     },
@@ -3926,6 +3945,13 @@
           "Best estimate €25,000 within €20,000-€30,000 range.",
           "Update counsel letter before approval.",
           "Profit/liabilities/equity sensitivity ±€5,000."
+        ],
+        [
+          "U08",
+          "Disposal quote",
+          "A €2,000 removal quote exists, but no present legal or constructive obligation at 31 August is evidenced.",
+          "Obtain an order, contract, legal requirement or other evidence that disposal was unavoidable at 31 August.",
+          "No provision is recognized. If a present obligation is demonstrated, profit and equity would decrease and liabilities would increase by €2,000; cash would remain unchanged until payment."
         ]
       ]
     }
@@ -3938,7 +3964,20 @@
     "materialStudentAnswers": 25,
     "materialDecisionSpecificReasoning": 25,
     "balanceSheetDifference": 0,
-    "equityRollForwardDifference": 0
+    "equityRollForwardDifference": 0,
+    "netProfit": 65000,
+    "totalAssets": 531000,
+    "totalLiabilities": 406000,
+    "closingEquity": 125000,
+    "cashFlowClosingCash": 60000,
+    "bankClosingCash": 60000,
+    "cashReconciliationDifference": 0,
+    "payrollClosingPayable": 32000,
+    "payrollReconciliationDifference": 0,
+    "disposalProvisionRecognized": 0,
+    "disposalQuoteDisclosed": 2000,
+    "equipmentPurchaseEquationCheck": true,
+    "materialEffectEquationFailures": []
   },
   "certification": {
     "studentName": "Gutčenko Aleksandra",
